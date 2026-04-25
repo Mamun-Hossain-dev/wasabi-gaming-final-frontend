@@ -1,13 +1,34 @@
-# React + Vite
+# Wasabi Gaming Frontend Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the frontend application of the Wasabi Gaming ecosystem. This application presents a visually rich, engaging, and dynamic interface for users and portfolios.
 
-Currently, two official plugins are available:
+## 🛠 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Framework**: Next.js 14, React 18, TypeScript (fully typed infrastructure)
+- **Styling**: TailwindCSS, Ant Design, Radix UI & generic Micro-animations.
+- **State Management**: Zustand (for streamlined global state) & React Query (`@tanstack/react-query` for API fetching caches).
+- **Authentication**: `next-auth` paired with standard JSON Web Token (JWT) strategies.
+- **Interactions**: Canvas Confetti, Embla Carousel, Framer Motion (via tailwindcss-animate).
+- **Document Rendering**: Built-in support for rendering UI contexts into documents (`html2canvas`, `jspdf`, `react-to-pdf`).
 
-## Expanding the ESLint configuration
+## 🚀 Architecture & Best Practices
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# wasabi-gaming-final-frontend
+* **Optimized Rendering**: Takes full advantage of Next.js server-side rendering (SSR) and client-side transitions to ensure sub-second page interactivity.
+* **UI/UX Aesthetics**: Beautiful interfaces modeled using granular Tailwind utility grids, implementing smooth transitions.
+* **Reusable Components**: Separated concerns via `src/components`, `src/hooks`, and `src/layouts` to maximize component scalability and maintainability.
+
+## ⚙️ Getting Started
+
+1. **Ensure Node.js is installed (v18+)**
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Set your Environment**:
+   Duplicate `.env.example` to `.env.local` and add your required NextAuth secrets, Google Client IDs, and backend API routes.
+4. **Run the local dev server**:
+   ```bash
+   npm run dev
+   ```
+
+*Open `http://localhost:3000` with your browser to see the outcome.*
